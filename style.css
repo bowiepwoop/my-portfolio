@@ -45,7 +45,7 @@ hr {
 }
 
 .medium {
-    height: 2px;
+    height: 1px;
     border-width: 0;
     background-color: black;
 }
@@ -69,6 +69,10 @@ p span {
 .educ {
     font-family: Arial Black, Helvetica, sans-serif;
     font-size: 15px;
+}
+
+.sub {
+    font-size: 13px;
 }
 
 ul {
@@ -127,4 +131,8 @@ a {
 
 a:hover {
     color: rgb(243, 93, 33);
+}
+
+.footer {
+    font-size: 13px;
 }
