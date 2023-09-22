@@ -1,3 +1,16 @@
+.scroll {
+    overflow-y: scroll;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
 body {
     margin: 10%;
     padding: auto;
