@@ -19,7 +19,7 @@ body {
 .circle-gradient {
     width: 100%; /* Adjust the width as needed */
     height: 100%; /* Adjust the height as needed */
-    background: radial-gradient(circle, rgb(172, 162, 159), rgb(241, 241, 241)) no-repeat center bottom;
+    background: radial-gradient(circle, rgb(185, 179, 160), rgb(241, 241, 241)) no-repeat center bottom;
     position: fixed;
     top: 0%;
     left: 0%;
