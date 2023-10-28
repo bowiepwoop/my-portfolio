@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>My Portfolio</title>
+    <meta name="title" content="My Portfolio" />
+    <meta name="description" content="bruh" />
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - custom font link
+  -->
+    <link rel="stylesheet" href="./assets/font/font.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/loading.svg" />
+    <link rel="preload" as="image" href="./assets/images/loading-circle.svg" />
+  </head>
+
+  <body class="active" id="top">
+    <!-- 
+    -#PRELOADING
+  -->
+
+    <div class="loading" data-loading>
+      <h4 class="img">Rhodalyn Baguan</h4>
+    </div>
+
+    
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/logo.svg"
+            width="40"
+            height="40"
+            alt="Home" />
+        </a>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <img
+            src="./assets/images/menu.svg"
+            width="17"
+            height="17"
+            alt="menu icon" />
+        </button>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler>
+              <span class="span one"></span>
+              <span class="span two"></span>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link" data-nav-link>About</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#education" class="navbar-link" data-nav-link
+                >Education</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#awards" class="navbar-link" data-nav-link>Awards</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#hobbies" class="navbar-link" data-nav-link
+                >Hobbies</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="#contact" class="navbar-link" data-nav-link
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <p class="navbar-title">Location</p>
+
+          <address class="navbar-text">
+            Manila, Philippines
+          </address>
+
+          <p class="navbar-text">
+            Get in touch
+            <a href="tel:09266315461" class="contact-link">roddaaa00@gmail.com</a>
+          </p>
+        </nav>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="section hero" id="home" aria-label="home">
+          <div class="container">
+            <div class="hero-content">
+              <div class="spacer-xhuge"></div>
+              <h1 class="h1 hero-title">MY PORTFOLIO</h1>
+
+              <div class="wrapper h2">
+                <strong class="strong" data-letter-effect>Rhodalyn</strong>
+                <strong class="strong" data-letter-effect>Noquera</strong>
+                <strong class="strong" data-letter-effect>Baguan</strong>
+              </div>
+
+              <div class="spacer-xhuge"></div>
+              <div class="spacer-xhuge"></div>
+              <div class="spacer-xhuge"></div>
+              <p class="hero-text"></p>
+            </div>
+          </div>
+        </section>
+        
+        <!-- 
+        - #CATEGORY
+      -->
+
+        <section class="section category" aria-label="photography category">
+          <div class="container">
+            <div class="marquee">
+            <p class="marquee-text"> about me </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section class="section about" id="about" aria-label="about me">
+          <div class="container">
+            <div class="about-content">
+              <h2 class="h2 section-title" data-reveal="right">
+                Hi! I’m <br />
+                Rhodalyn Baguan
+              </h2>
+
+              <div class="wrapper has-before" data-reveal="right">
+                <p class="section-text">
+                  I am a hardworking and dedicated individual, seeking opportunities to contribute technical excellence and innovation to cutting-edge projects. With a passion for creating immersive digital experiences and a commitment to delivering visually stunning and interactive web solutions.
+                </p>
+              </div>
+            </div>
+
+            <figure class="about-banner" data-reveal="left">
+              <div
+                class="img-holder has-before"
+                style="--width: 512; --height: 684">
+                <img
+                  src="./assets/images/moi.png"
+                  width="512"
+                  height="684"
+                  loading="lazy"
+                  alt="ako to bai"
+                  class="img-cover" />
+              </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #EDUCATION
+      -->
+        <section
+          class="section service"
+          id="education"
+          aria-labelledby="service-lable">
+          <p class="section-subtitle container" id="service-lable">EDUCATION</p>
+
+          <ul class="service-list">
+            <li data-reveal>
+              <div class="service-card container">
+                <div>
+                  <h4 class="h4 card-title">Bachelor of Science in Computer Science</h4>
+                  <p class="card-subtitle">St. Clare College of Caloocan</p>
+                  <p class="card-subtitle">2022</p>
+                </div>
+              </div>
+            </li>
+
+            <li data-reveal>
+              <div class="service-card container">
+                <div>
+                  <h4 class="h4 card-title">Bachelor of Science in Computer Science</h4>
+                  <p class="card-subtitle">Eulogio "Amang" Rodriguez Institute of Science and Technology</p>
+                  <p class="card-subtitle">2021 - 2022</p>
+                </div>
+              </div>
+            </li>
+
+            <li data-reveal>
+              <div class="service-card container">
+                <div>
+                  <h4 class="h4 card-title">General Academic Strand</h4>
+                  <p class="card-subtitle">Colegio de San Gabriel Arcangel of Caloocan</p>
+                  <p class="card-subtitle">2019 - 2021</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- 
+        - #SKILLS
+      -->
+
+        <section
+          class="section service"
+          id="skills"
+          aria-labelledby="service-lable">
+          <p class="section-subtitle container" id="service-lable">SKILLS</p>
+
+          <ul class="service-list">
+            <li data-reveal>
+              <div class="service-card container">
+                <div>
+                  <h4 class="h4 card-title">Blender</h4>
+                </div>
+              </div>
+            </li>
+
+            <li data-reveal>
+              <div class="service-card container">
+                <h4 class="h4 card-title">Web Development</h4>
+              </div>
+            </li>
+
+            <li data-reveal>
+              <div class="service-card container">
+                <h4 class="h4 card-title">Photoshop</h4>
+              </div>
+            </li>
+
+            <li data-reveal>
+              <div class="service-card container">
+                <h4 class="h4 card-title">Microsoft Office</h4>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- 
+        - #AWARDS
+      -->
+
+      <section
+      class="section service"
+      id="awards"
+      aria-labelledby="service-lable">
+      <p class="section-subtitle container" id="service-lable">AWARDS AND ACHIEVEMENTS</p>
+
+      <ul class="service-list">
+        <li data-reveal>
+          <div class="service-card container">
+            <div>
+              <h4 class="h4 card-title">Senior High School: with honors.</h4>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+        <!-- 
+        - #HOBBIES
+      -->
+
+      <section
+         class="section service"
+          id="hobbies"
+          aria-labelledby="service-lable">
+         <p class="section-subtitle container" id="service-lable">HOBBIES</p>
+
+        <ul class="service-list">
+          <li data-reveal>
+            <div class="service-card container">
+              <div>
+               <h4 class="h4 card-title">Listening to music.</h4>
+              </div>
+            </div>
+         </li>
+
+          <li data-reveal>
+            <div class="service-card container">
+              <h4 class="h4 card-title">Watching anime, series and movies.</h4>
+            </div>
+          </li>
+
+          <li data-reveal>
+            <div class="service-card container">
+             <h4 class="h4 card-title">Playing video games.</h4>
+            </div>
+          </li>
+        </ul>
+      </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="footer-top section" id="contact">
+        <div class="container">
+
+          <ul class="social-list">
+            <li>
+              <a href="https://github.com/bowiepwoop" class="social-link">GitHub</a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/in/rhodalyn-b-3a6b0620b/" class="social-link">Linkedin</a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/bowiepwoop/" class="social-link">Instagram</a>
+            </li>
+          </ul>
+
+          <p class="copyright">&copy; 2023 RODA. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back to top"
+      data-back-top-btn
+      >0%</a
+    >
+
+    <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+    <div class="cursor" data-cursor></div>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
