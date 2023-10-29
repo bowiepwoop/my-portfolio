@@ -479,7 +479,6 @@ body.active { overflow: hidden; }
   position: absolute;
   top: 0;
   margin-left: 50%;
-  padding-left: 80%;
   transform: translateX(-50%);
   width: 300px;
   font-family: Arial, Helvetica, sans-serif;
