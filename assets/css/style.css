@@ -478,7 +478,7 @@ body.active { overflow: hidden; }
 .hero .wrapper .strong {
   position: absolute;
   top: 0;
-  left: 50%;
+  margin-left: 50%;
   padding-left: 80%;
   transform: translateX(-50%);
   width: 300px;
