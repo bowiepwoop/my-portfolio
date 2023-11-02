@@ -1180,7 +1180,7 @@ body.active { overflow: hidden; }
    * HERO
    */
 
-  .hero { padding-block-start: 150px; }
+  .hero { padding-block-start: 100px; }
 
   .hero .container {
     position: relative;
@@ -1189,16 +1189,17 @@ body.active { overflow: hidden; }
 
   .hero-title { 
     text-align: left; 
+    margin-left: 10%;
   }
 
   .hero .wrapper {
     --fs-2: 8rem;
-    margin-block: -5px 10px;
+    margin-block: -5px 5px;
   }
 
   .hero-banner {
     position: absolute;
-    top: 50%;
+    top: 30%;
     right: 0;
     transform: translateY(-50%);
     max-width: 200px;
@@ -1472,7 +1473,7 @@ body.active { overflow: hidden; }
     margin-block: -10px 15px;
   }
 
-  .hero .wrapper .strong { left: 40%; }
+  .hero .wrapper .strong { left: 50%; }
 
   .hero-text {
     --fs-10: 2rem;
