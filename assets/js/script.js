@@ -236,3 +236,14 @@ document.body.addEventListener("mouseout", function () {
 document.body.addEventListener("mouseover", function () {
   cursor.classList.remove("disabled");
 });
+
+//marquee
+const root = document.documentElement;
+      const marqueelementsDisplayed = getCompuutedStyle(root).getPropertyValue("--marquee-elements-displayed");
+      const marqueeText = document.querySelector(".marquee-text");
+
+      root.style.setProperty("--marquee-elements", marqueeText.children.length);
+
+      for (let i = 0; i < marqueeElementsDisplayed; i++) {
+        marqueeText.appendChild(marqueeText.children[i].cloneNode(true));
+      }
