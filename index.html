@@ -147,7 +147,7 @@
               <div class="wrapper h2">
                 <strong class="strong" data-letter-effect>welcome</strong>
                 <strong class="strong" data-letter-effect>to my</strong>
-                <strong class="strong" data-letter-effect>page</strong>
+                <strong class="strong" data-letter-effect>website.</strong>
               </div>
 
               <div class="spacer-xhuge"></div>
@@ -181,7 +181,7 @@
         <section class="section about" id="about" aria-label="about me">
           <div class="container">
             <div class="about-content">
-              <h2 class="h2 section-title" data-reveal="right">
+              <h2 class="h3 section-title" data-reveal="right">
                 Hi! I’m <br />
                 Rhodalyn Baguan
               </h2>
@@ -221,7 +221,7 @@
             <li data-reveal>
               <div class="service-card container">
                 <div>
-                  <h4 class="h4 card-title">Bachelor of Science in Computer Science</h4>
+                  <h5 class="h5 card-title">Bachelor of Science in Computer Science</h5>
                   <p class="card-subtitle">St. Clare College of Caloocan</p>
                   <p class="card-subtitle">2022</p>
                 </div>
@@ -231,7 +231,7 @@
             <li data-reveal>
               <div class="service-card container">
                 <div>
-                  <h4 class="h4 card-title">Bachelor of Science in Computer Science</h4>
+                  <h5 class="h5 card-title">Bachelor of Science in Computer Science</h5>
                   <p class="card-subtitle">Eulogio "Amang" Rodriguez Institute of Science and Technology</p>
                   <p class="card-subtitle">2021 - 2022</p>
                 </div>
@@ -241,7 +241,7 @@
             <li data-reveal>
               <div class="service-card container">
                 <div>
-                  <h4 class="h4 card-title">General Academic Strand</h4>
+                  <h5 class="h5 card-title">General Academic Strand</h5>
                   <p class="card-subtitle">Colegio de San Gabriel Arcangel of Caloocan</p>
                   <p class="card-subtitle">2019 - 2021</p>
                 </div>
@@ -264,26 +264,26 @@
             <li data-reveal>
               <div class="service-card container">
                 <div>
-                  <h4 class="h4 card-title">Blender</h4>
+                  <h6 class="h6 card-title">Blender</h6>
                 </div>
               </div>
             </li>
 
             <li data-reveal>
               <div class="service-card container">
-                <h4 class="h4 card-title">Web Development</h4>
+                <h6 class="h6 card-title">Web Development</h6>
               </div>
             </li>
 
             <li data-reveal>
               <div class="service-card container">
-                <h4 class="h4 card-title">Photoshop</h4>
+                <h6 class="h6 card-title">Photoshop</h6>
               </div>
             </li>
 
             <li data-reveal>
               <div class="service-card container">
-                <h4 class="h4 card-title">Microsoft Office</h4>
+                <h6 class="h6 card-title">Microsoft Office</h6>
               </div>
             </li>
           </ul>
@@ -303,7 +303,7 @@
         <li data-reveal>
           <div class="service-card container">
             <div>
-              <h4 class="h4 card-title">Senior High School: with honors.</h4>
+              <h4 class="h6 card-title">Senior High School: with honors.</h4>
             </div>
           </div>
         </li>
@@ -324,20 +324,20 @@
           <li data-reveal>
             <div class="service-card container">
               <div>
-               <h4 class="h4 card-title">Listening to music.</h4>
+               <h4 class="h6 card-title">Listening to music.</h4>
               </div>
             </div>
          </li>
 
           <li data-reveal>
             <div class="service-card container">
-              <h4 class="h4 card-title">Watching anime, series and movies.</h4>
+              <h4 class="h6 card-title">Watching anime, series and movies.</h4>
             </div>
           </li>
 
           <li data-reveal>
             <div class="service-card container">
-             <h4 class="h4 card-title">Playing video games.</h4>
+             <h4 class="h6 card-title">Playing video games.</h4>
             </div>
           </li>
         </ul>
@@ -394,16 +394,5 @@
     - custom js link
   -->
     <script src="./assets/js/script.js"></script>
-    <script>
-      const root = document.documentElement;
-      const marqueelementsDisplayed = getCompuutedStyle(root).getPropertyValue("--marquee-elements-displayed");
-      const marqueeText = document.querySelector(".marquee-text");
-
-      root.style.setProperty("--marquee-elements", marqueeText.children.length);
-
-      for (let i = 0; i < marqueeElementsDisplayed; i++) {
-        marqueeText.appendChild(marqueeText.children[i].cloneNode(true));
-      }
-    </script>
   </body>
 </html>
