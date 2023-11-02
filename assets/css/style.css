@@ -156,7 +156,7 @@ body.active { overflow: hidden; }
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 15px; }
+.container { padding-inline: 10px; }
 
 .shape { display: none; }
 
@@ -192,7 +192,7 @@ body.active { overflow: hidden; }
 
 .h4 { font-size: var(--fs-4); }
 
-.h5 { font-size: var(--fs-5); }
+.h5 { font-size: var(--fs-7); }
 
 .h6 { font-size: var(--fs-6); }
 
@@ -246,7 +246,7 @@ body.active { overflow: hidden; }
 
 .section-subtitle {
   color: var(--white_a25);
-  font-size: var(--fs-4);
+  font-size: var(--fs-5);
   text-transform: uppercase;
   letter-spacing: 3.5px;
   font-family: Arial black, Helvetica, sans-serif;
@@ -481,7 +481,8 @@ body.active { overflow: hidden; }
   margin-left: 50%;
   transform: translateX(-50%);
   width: 50%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--ff-recoleta);
+  font-style: italic;
   font-weight: lighter;
   display: flex;
 }
@@ -556,7 +557,7 @@ body.active { overflow: hidden; }
 .gallery-card .card-title {
   font-weight: var(--fw-400);
   max-width: max-content;
-  margin-block-end: 2px;
+  margin-block-end: 1px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -658,7 +659,7 @@ body.active { overflow: hidden; }
 
 .category-card .card-title {
   color: var(--white_a25);
-  margin-block-end: 10px;
+  margin-block-end: 3px;
   text-align: center;
   transition: var(--transition-2);
 }
@@ -675,7 +676,7 @@ body.active { overflow: hidden; }
 
 .about .container {
   display: grid;
-  gap: 45px;
+  gap: 35px;
 }
 
 .about .wrapper,
@@ -684,7 +685,7 @@ body.active { overflow: hidden; }
 .about .section-title { margin-block-end: 35px; }
 
 .about .section-text {
-  font-size: var(--fs-6);
+  font-size: var(--fs-7);
   color: var(--white_a70);
   font-weight: var(--fw-300);
   font-family: Arial, Helvetica, sans-serif;
@@ -744,7 +745,7 @@ body.active { overflow: hidden; }
 
 .service-card .card-subtitle {
   color: var(--white_a50);
-  font-size: var(--fs-7);
+  font-size: var(--fs-9);
   font-weight: var(--fw-300);
   line-height: 1.5;
   margin-block: 10px 25px;
@@ -1186,7 +1187,9 @@ body.active { overflow: hidden; }
     z-index: 1;
   }
 
-  .hero-title { text-align: left; }
+  .hero-title { 
+    text-align: left; 
+  }
 
   .hero .wrapper {
     --fs-2: 8rem;
@@ -1583,7 +1586,7 @@ body.active { overflow: hidden; }
   .footer-top { padding-block: 300px; }
 
   .footer-top .section-title {
-    --fs-2: 8rem;
+    font-size: var(--fs-3);
     margin-block-start: 50px;
   }
 
@@ -1673,6 +1676,8 @@ body.active { overflow: hidden; }
 
    .marquee {
     overflow: hidden;
+    width: var(--marquee-width);
+    height: var(--marquee-height);
     background: none;
     border: none;
     display: flex;
@@ -1684,7 +1689,7 @@ body.active { overflow: hidden; }
       --marquee-height: 20%;
       --marquee-elements-displayed: 1;
       --marquee-element-width: calc(var(--marquee-width)/var(--marquee-elements-displayed));
-      --marquee-animation-duration: calc(var(--marquee-elemetns)*2s);
+      --marquee-animation-duration: calc(var(--marquee-elemetns)*4s);
     }
 
     .marquee-text {
@@ -1693,11 +1698,14 @@ body.active { overflow: hidden; }
     font-family: Arial black, Helvetica, sans-serif;
     color: white;
     white-space: nowrap;
+    height: 100%;
     padding: 0%;
     margin: 0%;
+    display: flex;
     letter-spacing: 20px;
     animation: scrolling 10s linear infinite;
   }
+
   .marquee:before, .marquee:after {
     position: absolute;
     top: 0%;
@@ -1719,7 +1727,7 @@ body.active { overflow: hidden; }
 
   @keyframes scrolling {
     0% {
-        transform: translateX(80vw);
+        transform: translateX(100vw);
     }
 
     100% {
