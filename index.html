@@ -1,398 +1,961 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
     - primary meta tags
   -->
-    <title>My Portfolio</title>
-    <meta name="title" content="My Portfolio" />
-    <meta name="description" content="bruh" />
+  <title>My Portfolio</title>
+  <meta name="title" content="Rhodalyn Baguan">
+  <meta name="description" content="simpleng tao">
 
-    <!-- 
+  <!-- 
     - favicon
   -->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="shortcut icon" href="./logo.svg" type="image/svg+xml">
 
-    <!-- 
+  <!-- 
     - custom css link
   -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-    <!-- 
+  <!-- 
     - custom font link
   -->
-    <link rel="stylesheet" href="./assets/font/font.css" />
+  <link rel="stylesheet" href="./assets/font/font.css">
 
-    <!-- 
+  <!-- 
     - preload images
   -->
-    <link rel="preload" as="image" href="./assets/images/loading.svg" />
-    <link rel="preload" as="image" href="./assets/images/loading-circle.svg" />
-  </head>
+  <link rel="preload" as="image" href="./assets/images/loading.svg">
+  <link rel="preload" as="image" href="./assets/images/loading-circle.svg">
 
-  <body class="active" id="top">
-    <!-- 
+</head>
+
+<body class="active" id="top">
+
+  <!-- 
     -#PRELOADING
   -->
 
-    <div class="loading" data-loading>
-      <h4 class="img">Rhodalyn Baguan</h4>
-    </div>
+  <div class="loading" data-loading>
+    <img src="./assets/images/loading.svg" width="55" height="55" alt="loading" class="img">
+    <img src="./assets/images/loading-circle.svg" width="70" height="70" alt="" class="circle">
+  </div>
 
-    
 
-    <!-- 
+
+
+
+  <!-- 
     - #HEADER
   -->
 
-    <header class="header" data-header>
-      <div class="container">
-        <a href="#" class="logo">
-          <img
-            src="./assets/images/logo.svg"
-            width="40"
-            height="40"
-            alt="Home" />
-        </a>
+  <header class="header" data-header>
+    <div class="container">
 
-        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-          <img
-            src="./assets/images/menu.svg"
-            width="17"
-            height="17"
-            alt="menu icon" />
-        </button>
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="40" height="40" alt="home">
+      </a>
 
-        <nav class="navbar" data-navbar>
-          <div class="navbar-top">
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <img src="./assets/images/menu.svg" width="17" height="17" alt="menu icon">
+      </button>
 
-            <button
-              class="nav-close-btn"
-              aria-label="close menu"
-              data-nav-toggler>
-              <span class="span one"></span>
-              <span class="span two"></span>
-            </button>
-          </div>
+      <nav class="navbar" data-navbar>
 
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <a href="#home" class="navbar-link" data-nav-link>Home</a>
-            </li>
+        <div class="navbar-top">
+          <a href="#home" class="logo">
+            <img src="./assets/images/logo.svg" width="140" height="40" alt="home" class="img">
+          </a>
 
-            <li class="navbar-item">
-              <a href="#about" class="navbar-link" data-nav-link>About</a>
-            </li>
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <span class="span one"></span>
+            <span class="span two"></span>
+          </button>
+        </div>
 
-            <li class="navbar-item">
-              <a href="#education" class="navbar-link" data-nav-link
-                >Education</a
-              >
-            </li>
+        <ul class="navbar-list">
 
-            <li class="navbar-item">
-              <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
-            </li>
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
 
-            <li class="navbar-item">
-              <a href="#awards" class="navbar-link" data-nav-link>Awards</a>
-            </li>
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
 
-            <li class="navbar-item">
-              <a href="#hobbies" class="navbar-link" data-nav-link
-                >Hobbies</a
-              >
-            </li>
+          <li class="navbar-item">
+            <a href="#educ" class="navbar-link" data-nav-link>Education</a>
+          </li>
 
-            <li class="navbar-item">
-              <a href="#contact" class="navbar-link" data-nav-link
-                >Contact</a
-              >
-            </li>
-          </ul>
+          <li class="navbar-item">
+            <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
+          </li>
 
-          <p class="navbar-title">Location</p>
+          <li class="navbar-item">
+            <a href="#ana" class="navbar-link" data-nav-link>Awards & Achievements</a>
+          </li>
 
-          <address class="navbar-text">
-            Manila, Philippines
-          </address>
+          <li class="navbar-item">
+            <a href="#hobbies" class="navbar-link" data-nav-link>Hobbies</a>
+          </li>
 
-          <p class="navbar-text">
-            Get in touch
-            <a href="tel:09266315461" class="contact-link">roddaaa00@gmail.com</a>
-          </p>
-        </nav>
+          <li class="navbar-item">
+            <a href="#models" class="navbar-link" data-nav-link>3D Models</a>
+          </li>
 
-        <div class="overlay" data-nav-toggler data-overlay></div>
-      </div>
-    </header>
+          <li class="navbar-item">
+            <a href="#edits" class="navbar-link" data-nav-link>Edits</a>
+          </li>
 
-    <main>
-      <article>
+          <li class="navbar-item">
+            <a href="#sketch" class="navbar-link" data-nav-link>Sketches</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link" data-nav-link>Social Links</a>
+          </li>
+
+        </ul>
         
-        <!-- 
+        <p class="navbar-title">My Location</p>
+
+        <address class="navbar-text">
+          Manila, Philippines
+        </address>
+
+        <p class="navbar-text">
+          Send me an e-mail through
+          <a href="tel:8085613846" class="contact-link">roddaaa00@gmail.com</a>
+        </p>
+
+      </nav>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+  <main>
+    <article>
+
+      <!-- 
         - #HERO
       -->
 
-        <section class="section hero" id="home" aria-label="home">
-          <div class="container">
-            <div class="hero-content">
-              <div class="spacer-xhuge"></div>
-              <h2 class="h2 hero-title">MY PORTFOLIO</h2>
+      <section class="section hero" id="home" aria-label="home">
+        <div class="container">
 
-              <div class="wrapper h2">
-                <strong class="strong" data-letter-effect>welcome</strong>
-                <strong class="strong" data-letter-effect>to my</strong>
-                <strong class="strong" data-letter-effect>website.</strong>
-              </div>
+          <!--<img src="./assets/images/IMG_1079.PNG" width="322" height="322" alt="" class="hero-banner">-->
 
-              <div class="spacer-xhuge"></div>
-              <div class="spacer-xhuge"></div>
-              <div class="spacer-xhuge"></div>
-              <p class="hero-text"></p>
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">My Portfolio</h1>
+
+            <div class="wrapper h2">
+              <strong class="strong" data-letter-effect>Rhodalyn</strong>
+              <strong class="strong" data-letter-effect>Noquera</strong>
+              <strong class="strong" data-letter-effect>Baguan</strong>
             </div>
           </div>
-        </section>
+
+        </div>
         
-        <!-- 
-        - #CATEGORY
-      -->
+        <div class="br1"></div>
+        
 
-        <section class="section category" aria-label="photography category">
-          <div class="container">
-              <div class="marquee">
-                  <h5 class="marquee-text"> aboutme <h5>
-                  <h5 class="marquee-text"> • </h5>
-                  <h5 class="marquee-text"> aboutme <h5>
-                  <h5 class="marquee-text"> • </h5>
-                  <h5 class="marquee-text"> aboutme </h5>
-             </div>
-           </div>
-        </section>
+      </section>
 
-        <!-- 
+
+      <!-- 
         - #ABOUT
       -->
 
-        <section class="section about" id="about" aria-label="about me">
-          <div class="container">
-            <div class="about-content">
-              <h2 class="h3 section-title" data-reveal="right">
-                Hi! I’m <br />
-                Rhodalyn Baguan
-              </h2>
+      <section class="section category" aria-label="photography category">
+        <div class="container">
+            <div class="marquee">
+                <h5 class="marquee-text"> about <h5>
+                <h5 class="marquee-text"> ✱ </h5>
+                <h5 class="marquee-text"> me <h5>
+                <h5 class="marquee-text"> ✱ </h5>
+                <h5 class="marquee-text"> about </h5>
+                <h5 class="marquee-text"> ✱ </h5>
+                <h5 class="marquee-text"> me <h5>
+                <h5 class="marquee-text"> ✱ </h5>
+                <h5 class="marquee-text"> about <h5>
+                <h5 class="marquee-text"> ✱ </h5>
+                <h5 class="marquee-text"> me <h5>
+                <h5 class="marquee-text"> ✱ </h5>
+                <h5 class="marquee-text"> about </h5>
+                <h5 class="marquee-text"> ✱ </h5>
+                <h5 class="marquee-text"> me <h5>
+                <h5 class="marquee-text"> ✱ </h5>
+                <h5 class="marquee-text"> about </h5>
+                <h5 class="marquee-text"> ✱ </h5>
+                <h5 class="marquee-text"> me <h5>
+                <h5 class="marquee-text"> ✱ </h5>
+                <h5 class="marquee-text"> about </h5>
+                <h5 class="marquee-text"> ✱ </h5>
+                <h5 class="marquee-text"> me <h5>
+                <h5 class="marquee-text"> ✱ </h5>
+           </div>
+         </div>
+      </section>
 
-              <div class="wrapper has-before" data-reveal="right">
-                <p class="section-text">
-                  I am a hardworking and dedicated individual, seeking opportunities to contribute technical excellence and innovation to cutting-edge projects. With a passion for creating immersive digital experiences and a commitment to delivering visually stunning and interactive web solutions.
-                </p>
-              </div>
+      <script src="https://cdnjs.cloudfare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+      <section class="section about" id="about" aria-label="about me">
+        <div class="container">
+          
+          <div class="about-content">
+            <h2 class="h3 section-title" data-reveal="right">
+              Hi! I’m <br />
+              Rhodalyn Baguan
+            </h2>
+
+            <div class="wrapper has-before" data-reveal="right">
+              <p class="section-text">
+                I am a hardworking and dedicated individual, seeking opportunities to contribute technical excellence and innovation to cutting-edge projects. With a passion for creating immersive digital experiences and a commitment to delivering visually stunning and interactive web solutions.
+              </p>
             </div>
-
-            <figure class="about-banner" data-reveal="left">
-              <div
-                class="img-holder has-before"
-                style="--width: 512; --height: 684">
-                <img
-                  src="./assets/images/moi.png"
-                  width="512"
-                  height="684"
-                  loading="lazy"
-                  alt="ako to bai"
-                  class="img-cover" />
-              </div>
           </div>
-        </section>
 
-        <!-- 
-        - #EDUCATION
-      -->
-        <section
-          class="section service"
-          id="education"
-          aria-labelledby="service-lable">
-          <p class="section-subtitle container" id="service-lable">EDUCATION</p>
+          <figure class="about-banner" data-reveal="left">
+            <div
+              class="img-holder has-before"
+              style="-width: 512; -height: 684">
+              <img
+                src="./assets/images/IMG_1079.PNG"
+                width="512"
+                height="684"
+                loading="lazy"
+                alt="ako to bai"
+                class="img-cover" />
+            </div>
+        </div>
+      </section>
 
-          <ul class="service-list">
-            <li data-reveal>
-              <div class="service-card container">
-                <div>
-                  <h5 class="h5 card-title">Bachelor of Science in Computer Science</h5>
-                  <p class="card-subtitle">St. Clare College of Caloocan</p>
-                  <p class="card-subtitle">2022</p>
-                </div>
-              </div>
-            </li>
-
-            <li data-reveal>
-              <div class="service-card container">
-                <div>
-                  <h5 class="h5 card-title">Bachelor of Science in Computer Science</h5>
-                  <p class="card-subtitle">Eulogio "Amang" Rodriguez Institute of Science and Technology</p>
-                  <p class="card-subtitle">2021 - 2022</p>
-                </div>
-              </div>
-            </li>
-
-            <li data-reveal>
-              <div class="service-card container">
-                <div>
-                  <h5 class="h5 card-title">General Academic Strand</h5>
-                  <p class="card-subtitle">Colegio de San Gabriel Arcangel of Caloocan</p>
-                  <p class="card-subtitle">2019 - 2021</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <!-- 
-        - #SKILLS
-      -->
-
-        <section
-          class="section service"
-          id="skills"
-          aria-labelledby="service-lable">
-          <p class="section-subtitle container" id="service-lable">SKILLS</p>
-
-          <ul class="service-list">
-            <li data-reveal>
-              <div class="service-card container">
-                <div>
-                  <h6 class="h6 card-title">Blender</h6>
-                </div>
-              </div>
-            </li>
-
-            <li data-reveal>
-              <div class="service-card container">
-                <h6 class="h6 card-title">Web Development</h6>
-              </div>
-            </li>
-
-            <li data-reveal>
-              <div class="service-card container">
-                <h6 class="h6 card-title">Photoshop</h6>
-              </div>
-            </li>
-
-            <li data-reveal>
-              <div class="service-card container">
-                <h6 class="h6 card-title">Microsoft Office</h6>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <!-- 
-        - #AWARDS
+      <!-- 
+      - #EDUCATION
       -->
 
       <section
-      class="section service"
-      id="awards"
-      aria-labelledby="service-lable">
-      <p class="section-subtitle container" id="service-lable">AWARDS AND ACHIEVEMENTS</p>
-
-      <ul class="service-list">
-        <li data-reveal>
-          <div class="service-card container">
-            <div>
-              <h4 class="h6 card-title">Senior High School: with honors.</h4>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-        <!-- 
-        - #HOBBIES
-      -->
-
-      <section
-         class="section service"
-          id="hobbies"
-          aria-labelledby="service-lable">
-         <p class="section-subtitle container" id="service-lable">HOBBIES</p>
+        class="section service"
+        id="educ"
+        aria-labelledby="service-lable">
+        <p class="section-subtitle container" id="service-lable">EDUCATION</p>
 
         <ul class="service-list">
           <li data-reveal>
             <div class="service-card container">
               <div>
-               <h4 class="h6 card-title">Listening to music.</h4>
+                <h5 class="h5 card-title">Bachelor of Science in Computer Science</h5>
+                <p class="card-subtitle">St. Clare College of Caloocan</p>
+                <p class="card-subtitle">2022</p>
               </div>
             </div>
-         </li>
+          </li>
 
           <li data-reveal>
             <div class="service-card container">
-              <h4 class="h6 card-title">Watching anime, series and movies.</h4>
+              <div>
+                <h5 class="h5 card-title">Bachelor of Science in Computer Science</h5>
+                <p class="card-subtitle">Eulogio "Amang" Rodriguez Institute of Science and Technology</p>
+                <p class="card-subtitle">2021 - 2022</p>
+              </div>
             </div>
           </li>
 
           <li data-reveal>
             <div class="service-card container">
-             <h4 class="h6 card-title">Playing video games.</h4>
+              <div>
+                <h5 class="h5 card-title">General Academic Strand</h5>
+                <p class="card-subtitle">Colegio de San Gabriel Arcangel of Caloocan</p>
+                <p class="card-subtitle">2019 - 2021</p>
+              </div>
             </div>
           </li>
+
+          <li data-reveal>
+            <div class="service-card container">
+              <div>
+                <h5 class="h5 card-title">Secondary School</h5>
+                <p class="card-subtitle">Kalayaan National High School</p>
+                <p class="card-subtitle">2015 - 2019</p>
+              </div>
+            </div>
+          </li>
+
+          <li data-reveal>
+            <div class="service-card container">
+              <div>
+                <h5 class="h5 card-title">Primary School</h5>
+                <p class="card-subtitle">Kalayaan Elementary School</p>
+                <p class="card-subtitle">2009 - 2015</p>
+              </div>
+            </div>
+          </li>
+
         </ul>
       </section>
-      </article>
-    </main>
+
+      <!-- 
+      - #SKILLS
+      -->
+
+      <section
+        class="section service"
+        id="skills"
+        aria-labelledby="service-lable">
+        <p class="section-subtitle container" id="service-lable">SKILLS</p>
+
+        <ul class="service-list">
+          <li data-reveal>
+            <div class="service-card container">
+              <div>
+                <h6 class="h6 card-title">Blender</h6>
+              </div>
+            </div>
+          </li>
+
+          <li data-reveal>
+            <div class="service-card container">
+              <div>
+                <h6 class="h6 card-title">Sketching</h6>
+              </div>
+            </div>
+          </li>
+
+          <li data-reveal>
+            <div class="service-card container">
+              <h6 class="h6 card-title">Microsoft Office</h6>
+            </div>
+          </li>
+
+          <li data-reveal>
+            <div class="service-card container">
+              <h6 class="h6 card-title">Microsoft Excel</h6>
+            </div>
+          </li>
+
+          <li data-reveal>
+            <div class="service-card container">
+              <h6 class="h6 card-title">Adobe Photoshop</h6>
+            </div>
+          </li>
+
+          <li data-reveal>
+            <div class="service-card container">
+              <h6 class="h6 card-title">Web Development</h6>
+            </div>
+          </li>
+
+          <li data-reveal>
+            <div class="service-card container">
+              <h6 class="h6 card-title">Microsoft PowerPoint</h6>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+
+      <!-- 
+      - #AWARDS
+    -->
+
+    <section
+    class="section service"
+    id="ana"
+    aria-labelledby="service-lable">
+    <p class="section-subtitle container" id="service-lable">AWARDS AND ACHIEVEMENTS</p>
+
+    <ul class="service-list">
+      <li data-reveal>
+        <div class="service-card container">
+          <div>
+            <h5 class="h6 card-title">FreeCodeCamp Responsive Web Design</h5>
+            <p class="card-subtitle">Developer Certification</p>
+          </div>
+        </div>
+      </li>
+
+      <li data-reveal>
+        <div class="service-card container">
+          <div>
+            <h5 class="h6 card-title">St. Clare College Investiture of Junior Student
+              Professionals</h5>
+            <p class="card-subtitle">Certificate of Participation</p>
+          </div>
+        </div>
+      </li>
+
+      <li data-reveal>
+        <div class="service-card container">
+          <div>
+            <h5 class="h6 card-title">Seminar on Values and Personality Development</h5>
+            <p class="card-subtitle">Certificate of Participation</p>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+   </section>
 
     <!-- 
+      - #HOBBIES
+    -->
+
+    <section
+       class="section service"
+        id="hobbies"
+        aria-labelledby="service-lable">
+       <p class="section-subtitle container" id="service-lable">HOBBIES</p>
+
+      <ul class="service-list">
+        <li data-reveal>
+          <div class="service-card container">
+            <div>
+             <h4 class="h6 card-title">Crocheting.</h4>
+            </div>
+          </div>
+       </li>
+
+        <li data-reveal>
+          <div class="service-card container">
+            <div>
+             <h4 class="h6 card-title">Listening to music.</h4>
+            </div>
+          </div>
+       </li>
+
+        <li data-reveal>
+          <div class="service-card container">
+            <h4 class="h6 card-title">Watching anime, series and movies.</h4>
+          </div>
+        </li>
+
+        <li data-reveal>
+          <div class="service-card container">
+           <h4 class="h6 card-title">Playing video games.</h4>
+          </div>
+        </li>
+      </ul>
+    </section>
+    
+
+      <!-- 
+        - #PORTFOLIO
+      -->
+
+    <section class="section portfolio" id="models" aria-labelledby="model">
+      <div class="container">
+        <h2 class="h2 section-title" id="portfolio-label" data-reveal>My Personal Projects.</h2>
+        <div class="portfolio-list">
+
+           <div class="wrapper">
+
+              <div class="portfolio-card" data-reveal>
+
+                <figure class="card-banner img-holder has-before" style="--width: 1080; --height: 1080;">
+                  <img src="./assets/images/snowhouse.PNG" width="1080" height="1080" loading="lazy" alt="Shoe Promo"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title">Snow House</a>
+                  </h3>
+
+                  <p class="card-tag"></p>
+                </div>
+
+              </div>
+
+              <div class="portfolio-card" data-reveal>
+
+                <figure class="card-banner img-holder has-before" style="--width: 353; --height: 471;">
+                  <img src="./assets/images/gameboy.png" width="353" height="471" loading="lazy" alt="Wedding Shot"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title">Game Boy</a>
+                  </h3>
+
+                  <p class="card-tag"></p>
+                </div>
+
+              </div>
+
+              <div class="portfolio-card" data-reveal>
+
+                <figure class="card-banner img-holder has-before" style="--width: 785; --height: 677;">
+                  <img src="./assets/images/jettskunai.png" width="785" height="677" loading="lazy" alt="Shoe Promo"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title">Jett's Kunai</a>
+                  </h3>
+
+                  <p class="card-tag"></p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="wrapper">
+
+              <div class="portfolio-card" data-reveal>
+
+                <figure class="card-banner img-holder has-before" style="--width: 1080; --height: 1080;">
+                  <img src="./assets/images/well.png" width="1080" height="1080" loading="lazy" alt="Shoe Promo"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title">Low Poly Well</a>
+                  </h3>
+
+                  <p class="card-tag"></p>
+                </div>
+
+              </div>
+
+              <div class="portfolio-card" data-reveal>
+
+                <figure class="card-banner img-holder has-before" style="--width: 353; --height: 471;">
+                  <img src="./assets/images/room.JPG" width= "353" height= "471" loading="lazy" alt="Wedding Shot"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title">Low Poly Room</a>
+                  </h3>
+
+                  <p class="card-tag"></p>
+                </div>
+
+              </div>
+
+              <div class="portfolio-card" data-reveal>
+
+                <figure class="card-banner img-holder has-before" style="--width: 700; --height: 605;">
+                  <img src="./assets/images/nobitaroom.png" width="700" height="605" loading="lazy" alt="Shoe Promo"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title">Nobita's Room</a>
+                  </h3>
+
+                  <p class="card-tag"></p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="wrapper">
+
+              <div class="portfolio-card" data-reveal>
+
+                <figure class="card-banner img-holder has-before" style="--width: 1080; --height: 1080;">
+                  <img src="./assets/images/chess.png" width="1080" height="1080" loading="lazy" alt="Shoe Promo"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title">Chess Board</a>
+                  </h3>
+
+                  <p class="card-tag"></p>
+                </div>
+
+              </div>
+
+              <div class="portfolio-card" data-reveal>
+
+                <figure class="card-banner img-holder has-before" style="--width: 353; --height: 471;">
+                  <img src="./assets/images/chrome.JPG" width= "353" height= "471" loading="lazy" alt="Wedding Shot"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title">3D Chrome Type Text</a>
+                  </h3>
+
+                  <p class="card-tag"></p>
+                </div>
+
+              </div>
+
+              <div class="portfolio-card" data-reveal>
+
+                <figure class="card-banner img-holder has-before" style="--width: 700; --height: 605;">
+                  <img src="./assets/images/primekarambit.JPG" width="700" height="605" loading="lazy" alt="Shoe Promo"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title">Prime Karambit</a>
+                  </h3>
+
+                  <p class="card-tag"></p>
+                </div>
+
+              </div>
+
+            </div>
+        </div>
+      </div>
+   </section>
+
+
+    <section class="section portfolio" id="edits" aria-labelledby="edit">
+      <div class="container">
+        <h2 class="h2 section-title" id="edits" data-reveal>My Edits.</h2>  
+        <div class="portfolio-list">
+
+          <div class="wrapper">
+
+            <div class="portfolio-card" data-reveal>
+
+              <figure class="card-banner img-holder has-before" style="--width: 700; --height: 605;">
+                <img src="./assets/images/lacasadepapel.PNG" width="700" height="605" loading="lazy" alt="Shoe Promo"
+                  class="img-cover1">
+              </figure>
+
+            </div>
+
+            <div class="portfolio-card" data-reveal>
+
+              <figure class="card-banner img-holder has-before" style="--width: 700; --height: 605;">
+                <img src="./assets/images/queen.png" width="700" height="605" loading="lazy" alt="Shoe Promo"
+                  class="img-cover1">
+              </figure>
+
+            </div>
+
+            <div class="portfolio-card" data-reveal>
+
+              <figure class="card-banner img-holder has-before" style="--width: 700; --height: 605;">
+                <img src="./assets/images/kiyo.png" width="700" height="605" loading="lazy" alt="Shoe Promo"
+                  class="img-cover1">
+              </figure>
+
+            </div>
+
+          </div>
+
+          <div class="wrapper">
+
+            <div class="portfolio-card" data-reveal>
+
+              <figure class="card-banner img-holder has-before" style="--width: 700; --height: 605;">
+                <img src="./assets/images/angela.PNG" width="700" height="605" loading="lazy" alt="Shoe Promo"
+                  class="img-cover1">
+              </figure>
+
+            </div>
+
+            <div class="portfolio-card" data-reveal>
+
+              <figure class="card-banner img-holder has-before" style="--width: 700; --height: 605;">
+                <img src="./assets/images/decapitated.png" width="700" height="605" loading="lazy" alt="Shoe Promo"
+                  class="img-cover1">
+              </figure>
+
+            </div>
+
+            <div class="portfolio-card" data-reveal>
+
+              <figure class="card-banner img-holder has-before" style="--width: 700; --height: 605;">
+                <img src="./assets/images/dang.PNG" width="700" height="605" loading="lazy" alt="Shoe Promo"
+                  class="img-cover1">
+              </figure>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="portfolio-card" data-reveal>
+
+          <figure class="card-banner img-holder has-before" style="--width: 2560; --height: 903;">
+            <img src="./assets/images/bowie.PNG" width="2560" height="903" loading="lazy" alt="Shoe Promo"
+              class="img-cover1">
+          </figure>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section portfolio" id="sketch" aria-labelledby="sketches">
+      <div class="container">
+        <h2 class="h2 section-title" id="sketches" data-reveal>My Sketches.</h2>
+        <div class="portfolio-list">
+
+          <div class="wrapper">
+
+            <div class="portfolio-card" data-reveal>
+
+              <figure class="card-banner img-holder has-before" style="--width: 3024; --height: 4032;">
+                <img src="./assets/images/1.JPG" width="3024" height="4032" loading="lazy" alt="Shoe Promo"
+                 class="img-cover1">
+              </figure>
+
+            </div>
+
+            <div class="portfolio-card" data-reveal>
+
+              <figure class="card-banner img-holder has-before" style="--width: 3024; --height: 4032;">
+                <img src="./assets/images/2.JPG" width="3024" height="4032" loading="lazy" alt="Shoe Promo"
+                 class="img-cover1">
+              </figure>
+
+            </div>
+
+            <div class="portfolio-card" data-reveal>
+
+              <figure class="card-banner img-holder has-before" style="--width: 3024; --height: 4032;">
+                <img src="./assets/images/3.JPG"width="3024" height="4032" loading="lazy" alt="Shoe Promo"
+                 class="img-cover1">
+              </figure>
+
+            </div>
+
+          </div>
+
+          <div class="wrapper">
+
+            <div class="portfolio-card" data-reveal>
+
+              <figure class="card-banner img-holder has-before" style="--width: 3024; --height: 4032;">
+                <img src="./assets/images/4.PNG" width="3024" height="4032" loading="lazy" alt="Shoe Promo"
+                 class="img-cover1">
+              </figure>
+
+            </div>
+
+            <div class="portfolio-card" data-reveal>
+
+              <figure class="card-banner img-holder has-before" style="--width: 3024; --height: 4032;">
+                <img src="./assets/images/5.PNG" width="3024" height="4032" loading="lazy" alt="Shoe Promo"
+                 class="img-cover1">
+              </figure>
+
+            </div>
+
+            <div class="portfolio-card" data-reveal>
+
+              <figure class="card-banner img-holder has-before" style="--width: 3024; --height: 4032;">
+                <img src="./assets/images/6.JPEG" width="3024" height="4032" loading="lazy" alt="Shoe Promo"
+                 class="img-cover1">
+              </figure>
+
+            </div>
+
+          </div>
+
+          <div class="wrapper">
+
+            <div class="portfolio-card" data-reveal>
+
+              <figure class="card-banner img-holder has-before" style="--width: 3024; --height: 4032;">
+                <img src="./assets/images/7.PNG" width="3024" height="4032" loading="lazy" alt="Shoe Promo"
+                 class="img-cover1">
+              </figure>
+
+            </div>
+
+            <div class="portfolio-card" data-reveal>
+
+              <figure class="card-banner img-holder has-before" style="--width: 3024; --height: 4032;">
+                <img src="./assets/images/8.JPEG" width="3024" height="4032" loading="lazy" alt="Shoe Promo"
+                 class="img-cover1">
+              </figure>
+
+            </div>
+
+            <div class="portfolio-card" data-reveal>
+
+              <figure class="card-banner img-holder has-before" style="--width: 3024; --height: 4032;">
+                <img src="./assets/images/9.JPEG" width="3024" height="4032" loading="lazy" alt="Shoe Promo"
+                 class="img-cover1">
+              </figure>
+
+            </div>
+
+          </div>
+
+          <div class="wrapper">
+
+            <div class="portfolio-card" data-reveal>
+
+              <figure class="card-banner img-holder has-before" style="--width: 3024; --height: 4032;">
+                <img src="./assets/images/10.JPEG" width="3024" height="4032" loading="lazy" alt="Shoe Promo"
+                 class="img-cover1">
+              </figure>
+
+            </div>
+
+            <div class="portfolio-card" data-reveal>
+
+              <figure class="card-banner img-holder has-before" style="--width: 3024; --height: 4032;">
+                <img src="./assets/images/11.JPEG" width="3024" height="4032" loading="lazy" alt="Shoe Promo"
+                 class="img-cover1">
+              </figure>
+
+            </div>
+
+            <div class="portfolio-card" data-reveal>
+
+              <figure class="card-banner img-holder has-before" style="--width: 3024; --height: 4032;">
+                <img src="./assets/images/12.PNG" width="3024" height="4032" loading="lazy" alt="Shoe Promo"
+                 class="img-cover1">
+              </figure>
+
+            </div>
+
+          </div>
+
+          <div class="wrapper">
+
+            <div class="portfolio-card" data-reveal>
+
+              <figure class="card-banner img-holder has-before" style="--width: 3024; --height: 4032;">
+                <img src="./assets/images/13.JPEG" width="3024" height="4032" loading="lazy" alt="Shoe Promo"
+                 class="img-cover1">
+              </figure>
+
+            </div>
+
+            <div class="portfolio-card" data-reveal>
+
+              <figure class="card-banner img-holder has-before" style="--width: 3024; --height: 4032;">
+                <img src="./assets/images/14.PNG" width="3024" height="4032" loading="lazy" alt="Shoe Promo"
+                 class="img-cover1">
+              </figure>
+
+            </div>
+
+            <div class="portfolio-card" data-reveal>
+
+              <figure class="card-banner img-holder has-before" style="--width: 3024; --height: 4032;">
+                <img src="./assets/images/15.PNG" width="3024" height="4032" loading="lazy" alt="Shoe Promo"
+                 class="img-cover1">
+              </figure>
+
+            </div>
+
+          </div>
+
+  </article>
+</main>
+
+
+  <!-- 
     - #FOOTER
   -->
 
-    <footer class="footer">
-      <div class="footer-top section" id="contact">
-        <div class="container">
+  <footer class="footer">
 
-          <ul class="social-list">
-            <li>
-              <a href="https://github.com/bowiepwoop" class="social-link">GitHub</a>
-            </li>
+    <div class="footer-top section" id="contact">
+      <div class="container">
 
-            <li>
-              <a href="https://www.linkedin.com/in/rhodalyn-b-3a6b0620b/" class="social-link">Linkedin</a>
-            </li>
+        <h2 class="h2 section-title" data-reveal>
+          Thank you for checking my portfolio out!
+        </h2>
 
-            <li>
-              <a href="https://www.instagram.com/bowiepwoop/" class="social-link">Instagram</a>
-            </li>
-          </ul>
+        <a href="https://linktr.ee/bowiepwoop" class="btn-icon" data-reveal>
+          <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy" alt="arrow-forward icon">
+        </a>
 
-          <p class="copyright">&copy; 2023 RODA. All rights reserved.</p>
-        </div>
       </div>
-    </footer>
+    </div>
 
-    <!-- 
+    <div class="footer-bottom">
+      <div class="container">
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.svg" width="40" height="40" loading="lazy" alt="home">
+        </a>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://github.com/bowiepwoop" class="social-link">GitHub.</a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/bowiepwoop/" class="social-link"> Insta.</a>
+          </li>
+
+          <li>
+            <a href="https://x.com/bowiechandesu" class="social-link">X.</a>
+          </li>
+
+        </ul>
+
+        <p class="copyright">RHODA 2023</p>
+
+      </div>
+    </div>
+
+    <div class="footer-bg has-before">
+      <img src="./assets/images/footer-bg.jpg" width="1920" height="1135" loading="lazy" alt="photography"
+        class="img-cover">
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
     - #BACK TO TOP
   -->
 
-    <a
-      href="#top"
-      class="back-top-btn"
-      aria-label="back to top"
-      data-back-top-btn
-      >0%</a
-    >
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>0%</a>
 
-    <!-- 
+
+
+
+
+  <!-- 
     - #CUSTOM CURSOR
   -->
 
-    <div class="cursor" data-cursor></div>
+  <div class="cursor" data-cursor></div>
 
-    <!-- 
+
+
+
+
+  <!-- 
     - custom js link
   -->
-    <script src="./assets/js/script.js"></script>
-  </body>
+  <script src="./assets/js/script.js"></script>
+
+</body>
+
 </html>
