@@ -247,3 +247,35 @@ const root = document.documentElement;
       for (let i = 0; i < marqueeElementsDisplayed; i++) {
         marqueeText.appendChild(marqueeText.children[i].cloneNode(true));
       }
+
+
+// This is optional additional JS to control marquee speed based on screen width
+document.addEventListener('DOMContentLoaded', function() {
+  const marqueeContent = document.querySelector('.marquee-content');
+  const marqueeContentDuplicate = document.querySelector('.marquee-content-duplicate');
+  
+  function adjustMarqueeSpeed() {
+    const windowWidth = window.innerWidth;
+    let duration;
+    
+    // Adjust animation speed based on screen width
+    if (windowWidth < 600) {
+      duration = 15; // Faster on mobile
+    } else if (windowWidth < 1200) {
+      duration = 20;
+    } else {
+      duration = 25; // Slower on large screens
+    }
+    
+    // Update animation duration
+    marqueeContent.style.animationDuration = `${duration}s`;
+    marqueeContentDuplicate.style.animationDuration = `${duration}s`;
+    marqueeContentDuplicate.style.animationDelay = `${duration/2}s`;
+  }
+  
+  // Set initial speed
+  adjustMarqueeSpeed();
+  
+  // Adjust on resize
+  window.addEventListener('resize', adjustMarqueeSpeed);
+});
