@@ -1616,67 +1616,70 @@ body.active { overflow: hidden; }
    * MARQUEE
    */
 
-   .marquee {
-    overflow: hidden;
-    width: var(--marquee-width);
-    height: var(--marquee-height);
-    background: none;
-    border: none;
-    display: flex;
-    justify-content: flex-start;
-    position: relative;
+/* Marquee styling */
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 15px 0;
+  background-color: var(--bg-primary, #f8f8f8);
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 20s linear infinite;
+  will-change: transform;
+}
+
+/* Create a duplicate for seamless animation */
+.marquee-content-duplicate {
+  display: flex;
+  animation: marquee2 20s linear infinite;
+  animation-delay: 10s;
+  will-change: transform;
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  white-space: nowrap;
+  padding: 0 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.marquee-separator {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes marquee2 {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(0); }
+}
+
+/* For pausing animation on hover */
+.marquee:hover .marquee-content,
+.marquee:hover .marquee-content-duplicate {
+  animation-play-state: paused;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+  .marquee-item {
+    font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+    padding: 0 0.5rem;
   }
-    :root {
-      --marquee-width: 100%;
-      --marquee-height: 20%;
-      --marquee-elements-displayed: 1;
-      --marquee-element-width: calc(var(--marquee-width)/var(--marquee-elements-displayed));
-      --marquee-animation-duration: calc(var(--marquee-elemetns)*4s);
-    }
-
-    .marquee-text {
-    font-size: 50px;
-    text-transform: uppercase;
-    font-family: Arial black, Helvetica, sans-serif;
-    color: white;
-    white-space: nowrap;
-    height: 100%;
-    padding: 0%;
-    margin: 0%;
-    display: flex;
-    letter-spacing: 20px;
-    animation: scrolling 20s linear infinite;
-  }
-
-  .marquee:before, .marquee:after {
-    position: absolute;
-    top: 0%;
-    width: 10rem;
-    height:100%;
-    content: "";
-    z-index: 1;
-  }
-
-  .marquee:before {
-    left: 0;
-    background: linear-gradient(to right, var(--smokey-black) 0%, transparent 100%);
-  }
-
-  .marquee:after {
-    right: 0;
-    background: linear-gradient(to right, var(--smokey-black) 0%, transparent 100%);
-  }
-
-  @keyframes scrolling {
-    0% {
-        transform: translateX(100vw);
-    }
-
-    100% {
-        transform: translateX(-100vw);
-    }
-  }
-
+}
+  
   /**
    * SERVICE
    */
